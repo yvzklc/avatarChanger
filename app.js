@@ -1,7 +1,6 @@
-const nameInp = document.querySelector(".name")
-const emailInp = document.querySelector(".email")
-const phoneInp = document.querySelector(".phone")
-const pictureInp = document.querySelector(".picture")
+const nameSpn = document.querySelector(".name")
+const emailSpn = document.querySelector(".email")
+const phoneSpn = document.querySelector(".phone")
 const pictureSrc = document.querySelector(".pictureSrc")
 const API = "https://randomuser.me/api/";
 
@@ -23,9 +22,9 @@ const showData = (data) => {
    
     let {title,first,last} = name
 
-    nameInp.textContent = title + " " + first + " " +  last
-    emailInp.textContent = email
-    phoneInp.textContent = phone
+    nameSpn.textContent = title + " " + first + " " +  last
+    emailSpn.textContent = email
+    phoneSpn.textContent = phone
     pictureSrc.setAttribute("src",`${picture.large}`)
 }
 getData()    
