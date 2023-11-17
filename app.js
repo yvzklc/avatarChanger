@@ -13,7 +13,7 @@ const getData = ()=>{
         return res.json()
     })
     .then((data) => showData(data))
-    .catch((err) => console.log(res.status))
+    .catch((err) => console.log(err,res.status))
 }
 
 const showData = (data) => {
