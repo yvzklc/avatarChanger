@@ -5,7 +5,7 @@ const pictureInp = document.querySelector(".picture")
 const pictureSrc = document.querySelector(".pictureSrc")
 const API = "https://randomuser.me/api/";
 
-const getFetch = ()=>{
+const getData = ()=>{
     fetch(API)
       .then((res) => { 
         if(!res.ok){
@@ -28,4 +28,4 @@ const showData = (data) => {
     phoneInp.textContent = phone
     pictureSrc.setAttribute("src",`${picture.large}`)
 }
-getFetch()    
+getData()    
