@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9EB8D9;
+}
+
+ .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEF5FF;
+    border-radius: 10px;
+    width: 25vw;
+    gap: 1rem;
+}
+.info img{
+    width: 15vw;
+    height: auto;
+    border-radius: 100%;
+    margin: auto;
+}
+.btn {
+    border: none;
+    width: 12em;
+    height: 3em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    margin: auto;
+  }
+  
+  .sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
+
+@media screen and (max-width: 500px) {
+    .info{
+        padding: 2vh;
+        width: 16rem;
+        margin-top: 3vh;
+        gap: 0.5rem;
+    }
+    .info img{
+        width: 26vw;
+    }
+    .info .btn{
+        margin-top: 2vh;
+        width: 8em;
+        height: 2em;
+    }
+    .info .btn .text{
+        font-size: 12px;
+    }
+}  
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+    .info{
+        font-size: 24px;
+        padding: 2vh;
+        width: 24rem;
+        margin-top: 3vh;
+        gap: 0.5rem;
+    }
+    .info img{
+        width: 26vw;
+    }
+    .info .btn{
+        margin-top: 2vh;
+        width: 12em;
+        height: 3em;
+    }
+    .info .btn .text{
+        font-size: 18px;
+    }
+}  
